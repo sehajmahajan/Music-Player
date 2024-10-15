@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <!-- Load the CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="player">
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <img class="track-art" src="assets/images/disc.png" alt="">
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <img class="prev-track" src="assets/images/previous.svg" onclick="prevTrack()">
+      <img class="playpause-track" src="assets/images/play.svg" onclick="playpauseTrack()">
+      <img class="next-track" src="assets/images/next.svg" onclick="nextTrack()">
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <img class="volume-down" src="assets/images/minus-sign.svg">
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <img class="volume-up" src="assets/images/plus-sign.svg">
+    </div>
+  </div>
+
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</body>
+
+</html>
