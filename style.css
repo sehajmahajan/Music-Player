@@ -1,10 +1,10 @@
 body {
-  background-image: url(assets/images/bg-image.jpg);
-  background-position: 100%;
+  background: rgb(34,199,156);
+  background: linear-gradient(117deg, rgba(34,199,156,1) 40%, rgba(33,134,148,1) 80%);
 }
 
 .player {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,8 +23,6 @@ body {
   margin: 25px;
   height: 250px;
   width: 250px;
-  background-image: url("assets/images/disc.png");
-  background-size: cover;
   border-radius: 15%;
   animation-play-state: running;
   -webkit-animation: spin 1s linear infinite;
